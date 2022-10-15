@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n({ useScope: "global" });
+
+const switchLang = () => {
+  locale.value === "en" ? (locale.value = "ru") : (locale.value = "en");
+  localStorage.setItem("lang", locale.value);
+};
+</script>
+
 <template>
   <footer class="footer">
     <div class="footer__container">
@@ -7,16 +17,34 @@
         </div>
         <div class="footer__lists">
           <ul class="footer__menu menu">
-            <li><a class="menu__head" href="#">Покупателям</a></li>
-            <li><a href="#">Покупателям</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Способы оплаты</a></li>
+            <li>
+              <a class="menu__head" href="#">{{
+                $t("footer.menu.toBuyers")
+              }}</a>
+            </li>
+            <li>
+              <a href="#">{{ $t("footer.menu.toBuyers") }}</a>
+            </li>
+            <li>
+              <a href="#">{{ $t("footer.menu.delivery") }}</a>
+            </li>
+            <li>
+              <a href="#">{{ $t("footer.menu.payment") }}</a>
+            </li>
           </ul>
           <ul class="footer__menu menu">
-            <li><a class="menu__head" href="#">О нас</a></li>
-            <li><a href="#">История магазина</a></li>
-            <li><a href="#">Fashion журнал</a></li>
-            <li><a href="#">Вакансии</a></li>
+            <li>
+              <a class="menu__head" href="#">{{ $t("footer.menu.about") }}</a>
+            </li>
+            <li>
+              <a href="#">{{ $t("footer.menu.history") }}</a>
+            </li>
+            <li>
+              <a href="#">{{ $t("footer.menu.magazine") }}</a>
+            </li>
+            <li>
+              <a href="#">{{ $t("footer.menu.vacancy") }}</a>
+            </li>
           </ul>
         </div>
         <div class="footer__social social">
@@ -55,12 +83,20 @@
       </div>
       <div class="footer__copyright-bar copyright-bar">
         <ul class="copyright-bar__links">
-          <li><a href="#">Политика конфиденциальности</a></li>
-          <li><a href="#">Центр приватности</a></li>
-          <li><a href="#">Настройки cookie</a></li>
+          <li>
+            <a href="#">{{ $t("footer.copyright.privacy") }}</a>
+          </li>
+          <li>
+            <a href="#">{{ $t("footer.copyright.centerPrivacy") }}</a>
+          </li>
+          <li>
+            <a href="#">{{ $t("footer.copyright.settingsCookie") }}</a>
+          </li>
         </ul>
         <div class="copyright-bar__right-side">
-          <div class="copyright-bar__geo">Россия</div>
+          <div class="copyright-bar__geo" @click="switchLang">
+            {{ $t("footer.copyright.local") }}
+          </div>
           <div class="copyright-bar__copyright">© N&L 2022</div>
         </div>
       </div>
@@ -136,19 +172,20 @@
     }
   }
   &__right-side {
+    display: grid;
     font-size: var(--footer-submenu-font-size);
     color: var(--gray-dark-medium);
   }
   &__geo {
+    justify-self: flex-end;
     margin-bottom: 1.8rem;
-    text-align: end;
     position: relative;
   }
   &__geo::before {
     content: "";
     position: absolute;
     top: 0.2rem;
-    left: 1.1rem;
+    left: -1.4rem;
     width: 1rem;
     height: 1rem;
     background-image: url("@/assets/img/icons/earth.svg");

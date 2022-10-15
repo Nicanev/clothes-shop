@@ -6,22 +6,34 @@
       </div>
       <div class="header__menu">
         <ul>
-          <li><a href="#" class="dropdown">Мужчинам</a></li>
-          <li><a href="#" class="dropdown">Женщинам</a></li>
-          <li><a href="#">Детям</a></li>
-          <li><a href="#">Одежда</a></li>
-          <li><a href="#">Обувь</a></li>
+          <li>
+            <a href="#" class="dropdown">{{ $t("header.mans") }}</a>
+          </li>
+          <li>
+            <a href="#" class="dropdown">{{ $t("header.womans") }}</a>
+          </li>
+          <li>
+            <a href="#">{{ $t("header.kids") }}</a>
+          </li>
+          <li>
+            <a href="#">{{ $t("header.clothes") }}</a>
+          </li>
+          <li>
+            <a href="#">{{ $t("header.shoes") }}</a>
+          </li>
         </ul>
       </div>
       <div class="header__left-side">
-        <div class="header__basket"><a href="#">Корзина</a></div>
+        <div class="header__basket">
+          <a href="#">{{ $t("header.basket") }}</a>
+        </div>
         <div class="header__profile profile">
           <div class="profile__img">
             <img src="@/assets/img/avatar.jpg" alt="avatar" />
           </div>
           <div class="profile__text">
             <div class="profile__name">Никита Лебедев</div>
-            <div class="profile__link">Открыть профиль</div>
+            <div class="profile__link">{{ $t("header.openProfile") }}</div>
           </div>
         </div>
       </div>

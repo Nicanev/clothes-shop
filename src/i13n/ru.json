@@ -1,0 +1,34 @@
+{
+    "header": {
+        "mans": "Мужчинам",
+        "womans": "Женщинам",
+        "kids": "Детям",
+        "clothes": "Одежда",
+        "shoes": "Обувь",
+        "basket": "Корзина",
+        "openProfile": "Открыть профиль"
+    },
+    "hero": {
+        "small-head": "Будь в тренде",
+        "main-head": "Современная одежда",
+        "sub-text": "В нашем магазине вы найдете современную модную одежду и обувь под любой сезон.",
+        "catalog-btn": "КАТАЛОГ"
+    },
+    "footer": {
+        "menu": {
+            "toBuyers": "Покупателям",
+            "delivery": "Доставка",
+            "about": "О нас",
+            "payment": "Способ оплаты",
+            "history": "История магазина",
+            "magazine": "Fashion журнал",
+            "vacancy": "Вакансия"
+        },
+        "copyright": {
+            "privacy": "Политика приватности",
+            "centerPrivacy": "Центр приватности",
+            "settingsCookie": "Настройка cookie",
+            "local": "Россия"
+        }
+    }
+}

@@ -2,13 +2,12 @@
   <section class="hero">
     <div class="hero__container">
       <div class="hero__text-block">
-        <div class="hero__small-heading">Будь в тренде</div>
-        <div class="hero__main-heading">Современная одежда</div>
+        <div class="hero__small-heading">{{ $t("hero.small-head") }}</div>
+        <div class="hero__main-heading">{{ $t("hero.main-head") }}</div>
         <div class="hero__sub">
-          В нашем магазине вы найдете современную модную одежду и обувь под
-          любой сезон.
+          {{ $t("hero.sub-text") }}
         </div>
-        <button class="hero__catalog-btn">КАТАЛОГ</button>
+        <button class="hero__catalog-btn">{{ $t("hero.catalog-btn") }}</button>
       </div>
       <div class="hero__img">
         <img src="@/assets/img/slider-image/hero-image-1.png" alt="" />
@@ -30,7 +29,7 @@
     margin-bottom: 1rem;
   }
   &__main-heading {
-    max-width: 37.3rem;
+    max-width: 40rem;
     font-weight: bold;
     color: var(--gray-white);
     font-size: var(--main-heading-font-size);

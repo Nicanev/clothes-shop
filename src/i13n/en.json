@@ -1,0 +1,34 @@
+{
+    "header": {
+        "mans": "Man's",
+        "womans": "Woman's",
+        "kids": "Kid's",
+        "clothes": "Clothes",
+        "shoes": "Shoes",
+        "basket": "Cart",
+        "openProfile": "Open profile"
+    },
+    "hero": {
+        "small-head": "Be a trend",
+        "main-head": "Modern clothes",
+        "sub-text": "In our store you will find modern fashionable clothes and shoes for any season.",
+        "catalog-btn": "CATALOG"
+    },
+    "footer": {
+        "menu": {
+            "toBuyers": "To buyers",
+            "delivery": "Delivery",
+            "about": "About us",
+            "payment": "Payment method",
+            "history": "Shop history",
+            "magazine": "Fashion magazine",
+            "vacancy": "Vacancy"
+        },
+        "copyright": {
+            "privacy": "Privacy policy",
+            "centerPrivacy": "Center privacy",
+            "settingsCookie": "Settings cookie",
+            "local": "US"
+        }
+    }
+}
