@@ -2,7 +2,9 @@
   <header class="header">
     <div class="header__container">
       <div class="header__logo">
-        <a href="#"><img src="@/assets/img/Logo.svg" alt="Logo" /></a>
+        <RouterLink to="/"
+          ><a href="#"><img src="@/assets/img/Logo.svg" alt="Logo" /></a
+        ></RouterLink>
       </div>
       <div class="header__menu">
         <ul>

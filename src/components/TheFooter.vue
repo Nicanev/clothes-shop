@@ -2,9 +2,13 @@
 import { useI18n } from "vue-i18n";
 const { locale } = useI18n({ useScope: "global" });
 
+let localString;
+
 const switchLang = () => {
-  locale.value === "en" ? (locale.value = "ru") : (locale.value = "en");
-  localStorage.setItem("lang", locale.value);
+  locale.value === "en"
+    ? ((locale.value = "ru"), (localString = "ru"))
+    : ((locale.value = "en"), (localString = "en"));
+  localStorage.setItem("lang", localString);
 };
 </script>
 

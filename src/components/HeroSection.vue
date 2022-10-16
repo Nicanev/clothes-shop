@@ -7,7 +7,11 @@
         <div class="hero__sub">
           {{ $t("hero.sub-text") }}
         </div>
-        <button class="hero__catalog-btn">{{ $t("hero.catalog-btn") }}</button>
+        <RouterLink to="/catalog"
+          ><button class="hero__catalog-btn">
+            {{ $t("hero.catalog-btn") }}
+          </button></RouterLink
+        >
       </div>
       <div class="hero__img">
         <img src="@/assets/img/slider-image/hero-image-1.png" alt="" />

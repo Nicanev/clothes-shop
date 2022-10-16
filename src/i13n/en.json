@@ -30,5 +30,15 @@
             "settingsCookie": "Settings cookie",
             "local": "US"
         }
+    },
+    "catalog": {
+        "card": {
+            "category": "Category",
+            "addToCart": "ADD TO CART"
+        },
+        "breadcrumbs": {
+            "home": "Home",
+            "mans": "Man's"
+        }
     }
 }
